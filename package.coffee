@@ -1,14 +1,14 @@
 pack= Packages.register
-  name: 'calendar'
-  description: 'Common commands for calendar'
+  name: 'reading'
+  description: 'allow to read some text displayed on the screen'
 
 pack.commands
-  'new-event':
+  'read-selection':
     spoken: ''
     grammarType: 'individual'
-    description: 'create a new event'
+    description: 'read the selection'
     action: ->
-      @key 'N', 'control'
+      @key '', 'control'
 
 Settings.vocabulary =
 vocabulary: [
